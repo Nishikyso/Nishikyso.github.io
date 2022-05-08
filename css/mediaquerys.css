@@ -1,0 +1,87 @@
+/*CSS TIENE EN CUENTA LOS @MEDIA EN ORDEN DEL ÚLTIMO AL PRIMERO !! */
+@media screen and (min-width: 975px){
+    .nombre{
+        font-size: 2.5em !important;
+        width: 100%;
+    }
+    .frontend{
+        font-size: 0.65em;
+    }
+
+    .efecto::before{
+        transform: scale(0, 1.7);
+        transform-origin: bottom right;
+    }
+    .efecto:hover::before{
+        transform: scale(1, 1.7);
+        transform-origin: bottom left;
+    }
+}
+
+@media screen and (min-width: 975px) and (max-width: 991px) {
+    .foto-perfil{
+        margin-top: 10vh !important;
+    }
+}
+
+@media screen and (min-width: 1px) and (max-width: 974px) { 
+    .nombre{
+        font-size: 2em !important;
+        width: 100%;
+    }
+
+    .frontend{
+        font-size: 0.5em;
+    }
+
+    .efecto::before{
+        transform: scale(0, 1.5) !important;
+        transform-origin: bottom right;
+    }
+
+    .efecto:hover::before{
+        transform: scale(1, 1.5) !important;
+        transform-origin: bottom left;
+    }
+
+    .sectionBanner{
+        height: 100vh;
+    }
+
+    .foto-perfil{
+        margin-top: 10vh !important;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .foto-perfil{
+        width: 200px !important;
+        height: 200px !important;
+    }
+
+    .welcome{
+        font-size: 1.5em;
+    }
+
+    .nombre{
+        font-size: 1.5em !important;
+    }
+
+    .frontend{
+        font-size: 0.8em !important;
+    }
+
+    .efecto{
+        padding-bottom: 4px;
+    }
+
+    .efecto::before{
+        transform: scale(0, 1.2) !important;
+        transform-origin: bottom right;
+    }
+
+    .efecto:hover::before{
+        transform: scale(1, 1.2) !important;
+        transform-origin: bottom left;
+    }
+}

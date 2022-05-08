@@ -1,0 +1,45 @@
+.spinner {
+    width: 35px;
+    height: 35px;
+    background: linear-gradient(90deg, rgba(80,80,255) 0%, rgb(89, 10, 180) 100%);
+    margin: 50vh auto;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+    0% { 
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+    } 50% { 
+        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+    } 100% { 
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+}
+
+.span-carga{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.carga-clara{
+    background: linear-gradient(90deg, rgba(208, 208, 208, 1) 48%, rgba(160, 160, 160, 1) 100%);
+}
+
+.carga-oscura{
+    background: linear-gradient(90deg, rgba(47, 54, 64, 1) 23%, rgba(24, 27, 32, 1) 100%);
+}
+
+.sacar-scroll::-webkit-scrollbar {
+    display: none;
+}
