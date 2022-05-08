@@ -496,23 +496,23 @@ html, body{
 
 @media screen and (max-width: 320px) {
     .moon{
-        top: -120px;
-        left: -280px;
-        width: 520px;
-        height: 520px;
+        top: -130px;
+        left: -300px;
+        width: 490px;
+        height: 490px;
     }
     
     .moon__crater1 {
-        top: 90px;
-        left: 185px;
-        width: 40px;
-        height: 110px;
+        top: 80px;
+        left: 145px;
+        width: 30px;
+        height: 95px;
         transform: rotate(5deg);
     }
     
     .moon__crater2 {
-        top: 310px;
-        left: 45px;
+        top: 250px;
+        left: 35px;
         width: 40px;
         height: 80px;
         transform: rotate(-300deg);
@@ -524,7 +524,59 @@ html, body{
 
     .error {
         left: 10px;
-        top: 320px;
+        top: 350px;
+        transform: translateY(-110%);
+    }
+    .error__title {
+        font-size: 4em;
+    }
+    .error__subtitle {
+        font-size: 1.2em;
+    }
+    .error__button--contact:hover {
+        color: white;
+        background-color: #21252c;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .star{
+        display: none;
+    }
+}
+@media screen and (max-width: 250px) {
+    .moon{
+        top: -130px;
+        left: -300px;
+        width: 490px;
+        height: 490px;
+    }
+    
+    .moon__crater1 {
+        top: 80px;
+        left: 145px;
+        width: 30px;
+        height: 95px;
+        transform: rotate(5deg);
+    }
+    
+    .moon__crater2 {
+        top: 250px;
+        left: 35px;
+        width: 40px;
+        height: 80px;
+        transform: rotate(-300deg);
+    }
+
+    .moon__crater3{
+        display: none;
+    }
+
+    .error {
+        left: 10px;
+        top: 400px;
         transform: translateY(-110%);
     }
     .error__title {

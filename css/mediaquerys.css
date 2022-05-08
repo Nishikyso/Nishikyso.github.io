@@ -8,11 +8,11 @@
         font-size: 0.65em;
     }
 
-    .efecto::before{
+    .efecto-nombre::before{
         transform: scale(0, 1.7);
         transform-origin: bottom right;
     }
-    .efecto:hover::before{
+    .efecto-nombre:hover::before{
         transform: scale(1, 1.7);
         transform-origin: bottom left;
     }
@@ -34,12 +34,12 @@
         font-size: 0.5em;
     }
 
-    .efecto::before{
+    .efecto-nombre::before{
         transform: scale(0, 1.5) !important;
         transform-origin: bottom right;
     }
 
-    .efecto:hover::before{
+    .efecto-nombre:hover::before{
         transform: scale(1, 1.5) !important;
         transform-origin: bottom left;
     }
@@ -60,28 +60,38 @@
     }
 
     .welcome{
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 
     .nombre{
-        font-size: 1.5em !important;
+        font-size: 1.3em !important;
+        padding-top: 0px !important;
     }
 
     .frontend{
-        font-size: 0.8em !important;
+        font-size: 0.7em !important;
     }
 
-    .efecto{
+    .efecto-nombre{
         padding-bottom: 4px;
     }
 
-    .efecto::before{
+    .efecto-nombre::before{
         transform: scale(0, 1.2) !important;
         transform-origin: bottom right;
     }
 
-    .efecto:hover::before{
+    .efecto-nombre:hover::before{
         transform: scale(1, 1.2) !important;
         transform-origin: bottom left;
+    }
+
+    .tecnologia{
+        width: 80px;
+    }
+
+    .btn-blanco{
+        font-size: 0.9em;
+        padding: 5px !important;
     }
 }
