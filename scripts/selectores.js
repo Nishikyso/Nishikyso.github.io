@@ -9,3 +9,4 @@ export const iconoLuna = document.querySelector(".fa-moon");
 export const iconoSol = document.querySelector(".fa-sun");
 export const espacioSpinner = document.querySelector(".espacio-spinner");
 export const esconder = document.querySelector(".esconder");
+

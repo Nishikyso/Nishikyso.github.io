@@ -44,7 +44,7 @@
                             <a class="nav-link" href="../index.html#sobre-mi">Sobre mí</a>
                         </li> 
                         <li class="nav-item">
-                            <a class="nav-link" href="../pages/cv.html" target="_blank">CV</a>
+                            <a class="nav-link" href="../pages/cv.html">CV</a>
                         </li> 
                         <li class="nav-item">
                             <a class="nav-link" href="../index.html#proyectos">Proyectos</a>
@@ -164,7 +164,7 @@
 
             <section class="corte w-100 d-flex align-items-center py-5 my-5">
                 <div class="container d-flex justify-content-evenly">
-                    <a href="/pages/cv.html" class="px-4 py-2 btn-blanco" target="_blank">Ver CV</a>
+                    <a href="/pages/cv.html" class="px-4 py-2 btn-blanco">Ver CV</a>
                     <a class="p-2 btn-blanco" download="CV Ramiro Garcia" href="/CV Ramiro Garcia.pdf">Descargar CV</a>
                 </div>
             </section>
@@ -214,28 +214,36 @@
 
 
             <section class="py-3 py-md-5 my-3 my-md-5" id="contacto" data-aos="fade-up" data-aos-duration="1000">
-                <form class="container">
+                <form class="container needs-validation" id="form"  method="POST" novalidate action="https://formsubmit.co/61aa2b78e06f9126298b034322ee0be9"> <!--  -->
                     <div class="row justify-content-center col">
                         <div class="col-12 col-md-8">
                             <h3 class="text-md-center">Sigamos en contacto!</h3>
                         </div>
                         <div class="col-12 col-md-8 my-2">
-                            <input type="text" class="form-control" placeholder="* Tu nombre" required>
+                            <label for="nombre">Nombre y apellido <span class="text-danger">*</span></label>
+                            <input name="nombre" id="nombre" type="text" class="form-control" placeholder="Juan Pérez" required>
                         </div>
                         <div class="col-12 col-md-8 my-2">
-                            <input type="email" class="form-control" id="inputEmail4" placeholder="* tucorreo@mail.com" required>
+                            <label for="email">Email <span class="text-danger">*</span></label>
+                            <input name="email" type="email" class="form-control" id="email" placeholder="mail@mail.com" required>
                         </div>
                         <div class="col-12 col-md-8 my-2">
-                            <input type="text" class="form-control" placeholder="Tu teléfono">
+                            <label for="celular">Celular</label>
+                            <input name="celular" type="text" id="celular" class="form-control" placeholder="Tu número celular">
                         </div>
                         <div class="col-12 col-md-8 my-2">
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="* Dejame un mensaje!" required></textarea>
+                            <label for="mensaje">Mensaje <span class="text-danger">*</span></label>
+                            <textarea name="mensaje" class="form-control" id="mensaje" rows="3" placeholder="Dejame un mensaje!" required></textarea>
                         </div>
                         <div class="col-12 col-md-8">   
-                            <button class="btn enviar w-100 my-2 px-4">Enviar</button>
+                            <button type="submit" class="btn enviar w-100 my-2 px-4" id="enviar">Enviar</button>
                         </div>
-
                     </div>
+                    
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html#contacto">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_subject" value="Nuevo mensaje del Portfolio!">
                 </form>
             </section>
         </main>
@@ -244,7 +252,7 @@
             <ul class="nav justify-content-center py-2 my-2">
                 <li class="footer-item"><a href="./index.html#" class="footer-link text-dark text-uppercase px-2">Home</a></li>
                 <li class="footer-item"><a href="./index.html#sobre-mi" class="footer-link text-dark text-uppercase px-2">Sobre mí</a></li>
-                <li class="footer-item"><a href="./pages/cv.html" class="footer-link text-dark text-uppercase px-2" target="_blank">CV</a></li>
+                <li class="footer-item"><a href="./pages/cv.html" class="footer-link text-dark text-uppercase px-2">CV</a></li>
                 <li class="footer-item"><a href="./index.html#proyectos" class="footer-link text-dark text-uppercase px-2">Proyectos</a></li>
                 <li class="footer-item"><a href="./index.html#contacto" class="footer-link text-dark text-uppercase px-2">Contacto</a></li>
             </ul>
